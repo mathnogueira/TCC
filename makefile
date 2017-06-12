@@ -1,6 +1,3 @@
-PWD=`pwd`
-INCLUDE=$(PWD)/libs
-
 all: out
 	@echo "Compiling LaTeX"
 	@pdflatex -output-directory=out relatorio.tex > /dev/null
