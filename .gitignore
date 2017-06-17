@@ -1,2 +1,14 @@
 out/
+*.aux
+*.bbl
+*.blg
+*.fls
+*.lff
+*.log
+*.loq
+*.ltt
+*.out
+*.gz
+*.toc
+relatorio.fdb_latexmk
 relatorio.pdf

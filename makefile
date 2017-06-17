@@ -21,9 +21,10 @@ all: out compile
 ## Ao compilar, gera as referencias da monografia.
 compile: $(MAIN_TEX)
 	@echo "Adding references"
-	@pdflatex -output-directory=out $^
+	@pdflatex -output-directory=out $^ > /dev/null
 	@echo "Compiling LaTeX"
 	@bibtex $(MAIN_AUX) > /dev/null
+	@pdflatex -output-directory=out $^ > /dev/null
 	@pdflatex -output-directory=out $^ > /dev/null
 
 ## Cria a pasta de arquivos gerados
