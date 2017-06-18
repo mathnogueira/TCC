@@ -1,0 +1,22 @@
+\section{Modelagem do módulo de análise}
+
+O que falar:
+\begin{enumerate}
+\item MVC
+\item Decorator
+\item Observer
+\end{enumerate}
+
+O módulo de análise do SIOUT, devido aos requisitos levantados junto ao cliente, tem complexidade superior aos demais módulos do sistema. Isso ocorre, pois o módulo de análise é capaz de exibir todas as informações fornecidas durante as etapa de cadastro do uso de água e as etapa de regularização da intervenção. Devido a esse fator, o modelo estrutural do módulo foi arquitetado visando a reutilização da maior quantidade de código possível dos módulos contidos no módulo de análise.
+
+O primeiro obstáculo encontrado durante essa primeira etapa foi encontrar uma maneira de desabilitar a edição de todas as informações inseridas pelo usuário no módulo de cadastro de uso de água. A solução mais adequada para atingir este objetivo foi com a utilização do \textit{Design Pattern Decorator}. Utilizando este padrão de projetos, é possível descentralizar a responsabilidade de bloquear as entradas de dados, fazendo assim, que cada módulo possa tratar suas peculiaridades isoladamente, dessa forma, evitando-se efeitos colaterais em outros módulos do sistema. Com este problema solucionado, foi encontrado outro obstáculo...
+
+%Utilizando este padrão de projeto, foi possível reutilizar totalmente todo o código-fonte do módulo de cadastro de uso de água, sendo necessário adicionar pequenas quantias de código a este módulo. Essa adição de código foi responsável por bloquear todos os campos e componentes de entrada de dados.
+
+
+%, pois, este módulo deve ser capaz de visualizar todas as informações disponibilizadas pelo usuário no módulo de cadastro de uso de água e no módulo de regularização
+
+%A primeira etapa do módulo de análise foi a modelagem, para que assim, pudéssemos estimar o trabalho necessário para o desenvolvimento do módulo. O módulo seguiu a arquitetura do restante do sistema, o MVC, porém algumas houveram algumas alterações, se comparado com o restante do sistema.
+
+
+%O maior desafio encontrado durante o desenvolvimento deste módulo foi a modelagem de uma estratégia para que outros módulos do sistema pudessem ser reutilizados completamente no módulo de análise. Para alcançar esse objetivo, foi utilizado o \textit{Design Pattern Decorator}, que consiste em uma classe ou função consiga alterar o funcionamento de outra em tempo de execução. Este padrão foi utilizado para que 

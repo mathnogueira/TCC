@@ -36,3 +36,15 @@ clean:
 	@echo "Cleaning project..."
 	@rm -rf out
 	@rm -f relatorio.pdf
+	@rm -f *.aux
+	@rm -f *.bbl
+	@rm -f *.blg
+	@rm -f *.fls
+	@rm -f *.lff
+	@rm -f *.log
+	@rm -f *.loq
+	@rm -f *.ltt
+	@rm -f *.out
+	@rm -f *.gz
+	@rm -f *.toc
+	@rm -f relatorio.fdb_latexmk
