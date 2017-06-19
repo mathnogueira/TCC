@@ -23,7 +23,7 @@ compile: $(MAIN_TEX)
 	@echo "Adding references"
 	@pdflatex -output-directory=out $^ > /dev/null
 	@echo "Compiling LaTeX"
-	@bibtex $(MAIN_AUX) > /dev/null
+	@bibtex $^ > /dev/null
 	@pdflatex -output-directory=out $^ > /dev/null
 	@pdflatex -output-directory=out $^ > /dev/null
 
